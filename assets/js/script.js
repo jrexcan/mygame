@@ -3,17 +3,11 @@
 const Toast = Swal.mixin({
 		  toast: true,
 		  position: 'center',
-		  showConfirmButton: true,
+		  showConfirmButton: false,
 		  timer: 3000
-		},
-		function(){
-		    location.reload();
 		}
 		)
 				
-
-
-
 //player object
 let player ={
 	character : $('#player'),
@@ -36,22 +30,22 @@ let def = 100;
 
 $('#easy').click(function(){
 	speed = 100;
-	resetGame()
 	$('#level').html('Easy Level');
+	$('#level').removeClass('text-success text-primary text-danger');
 	$('#level').addClass('text-success');
 })
 
 $('#medium').click(function(){
 	speed = 150;
-	resetGame()
 	$('#level').html('Medium Level');
+	$('#level').removeClass('text-success text-primary text-danger');
 	$('#level').addClass('text-primary');
 
 })
 $('#hard').click(function(){
 	speed = 200;
-	resetGame()
 	$('#level').html('Hard Level');
+	$('#level').removeClass('text-success text-primary text-danger');
 	$('#level').addClass('text-danger');
 	
 })
@@ -137,12 +131,7 @@ function playerAnimate(){
 }
 
 function resetGame(){
-	$('#level').html('');
-	$('#level').removeClass('text-danger text-primary text-success');
-	player.playerPos = 0;
-	player.character.css('left','0px')
-	ai.aiPos = 0;
-	ai.character.css('left','0px')
+	location.reload();
 	return;
 }
 
