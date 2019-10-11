@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	/*margin-top: 5%;*/
+	/*margin-left: 5%;*/
+	background-image: url(../images/landscape.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+.menu{
+	margin: 0 auto;
+	padding-top: 15%;
+	text-align: center; 
+}
+
+.character{
+	position: absolute;
+	width: 300px;
+}
+
+#ai{
+	bottom: 150px;
+}
+
+#player{
+	 bottom: 50px;
+}
+
+.snail{
+	width: 100px;
+}
+
+.line{
+	position: absolute;
+	width: 200px;
+	left: 1000px;
+	bottom: 10px;
+	height: 300px;
+}
+
+#level{
+	margin-top: 5%;
+}
+
+#tap{
+	margin-right: 2%;
+	position: absolute;
+    right: 2px;
+    bottom: 80px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.79);
+    color: #17a2b8;
+    font-size: 2em;
+    border: 5px solid #007bff78;
+}
+
+#tap:hover{
+	border: 5px solid rgba(40, 167, 69,0.5);
+	box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.5);
+}
+
+.alertImg{
+	width: 200px;
+}
